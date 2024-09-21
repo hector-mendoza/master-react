@@ -1,0 +1,9 @@
+1. Create a component
+2. Recibe a prop with the actual year
+3. We need to use functions to get the actual year
+4. Use states and events to have 2 buttons.
+5. One button to increase the year
+6. One button to decrease the year
+7. Show the actual year in the component
+8. Validate that the year is a number and required
+6. Update the year by an input, it will be updated dynamically

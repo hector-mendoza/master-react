@@ -7,6 +7,44 @@
   pointer-events: none;
 }
 
+.flex {
+  display: flex;
+  gap: .8em;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.message {
+  font-size: .82em;
+  background-color: #FF0000;
+  color: #FFF;
+  padding: .7em;
+  border-radius: 1em;
+}
+
+.year {
+  margin-top: 2em;
+}
+
+input {
+  padding: 0.5em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 0.25em;
+}
+
+button {
+  padding: 0.5em 1em;
+  font-size: 1em;
+  border: none;
+  border-radius: 0.25em;
+  background-color: #61dafb;
+  color: white;
+  cursor: pointer;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
