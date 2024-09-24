@@ -1,0 +1,100 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 15vmin;
+  pointer-events: none;
+}
+
+.users-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.users-list li {
+  display: flex;
+  align-items: center;
+  gap: .72em;
+  margin-bottom: 1em;
+}
+
+.form-container {
+  max-width: 620px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-main {
+  display: flex;
+  flex-direction: column;
+  gap: .88em;
+  text-align: left;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: .48em;
+  width: 100%;
+  position: relative;
+}
+
+.form-main label {
+  font-size: .52em;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.form-main input,
+.form-main select {
+  padding: .8em;
+  font-size: .54em;
+  border-radius: .2em;
+  appearance: none;
+}
+
+.form-main button {
+  padding: .8em;
+  font-size: .54em;
+  border-radius: .25em;
+  background-color: #FFF;
+  border: none;
+  color: #282c34;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
