@@ -68,6 +68,15 @@
   width: 100%;
 }
 
+.form-message {
+  font-size: .52em;
+  color: #282c34;
+  padding: .8em;
+  border-radius: .25em;
+  background-color: #FFF;
+  margin-bottom: 1.5em;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -17,11 +17,20 @@ const Form = () => {
         setUser(userData)
     }
 
+    const handleChange = (e) => {
+        const { name, value } = e.target
+        setUser((prevUser) => {
+            return {
+                ...prevUser,
+                [name]: value
+            }
+        })
+    }
+
     return (
         <div className='form-container'>
             {user.name && user.name.length > 0 && (
-                <div>
-                    <h2>Form</h2>
+                <div className='form-message'>
                     <p>Name: {user.name}</p>
                     <p>Email: {user.email}</p>
                 </div>
@@ -29,14 +38,14 @@ const Form = () => {
             <form className='form-main' onSubmit={handleSubmit}>
                 <div className='form-group'>
                     <label htmlFor='name'>Name:</label>
-                    <input type='text' id='name' name='name' />
+                    <input type='text' id='name' name='name' onChange={handleChange} />
                 </div>
                 <div className='form-group'>
                     <label htmlFor='email'>Email:</label>
-                    <input type='email' id='email' name='email' />
+                    <input type='email' id='email' name='email' onChange={handleChange} />
                 </div>
                 <div className='form-group'>
-                    <select name='gender'>
+                    <select name='gender' onChange={handleChange}>
                         <option value='male'>Male</option>
                         <option value='female'>Female</option>
                     </select>
